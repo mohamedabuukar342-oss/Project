@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilaac Trans - Caawinaad (Help)</title>
+    <link rel="stylesheet" href="helping.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#1a252f;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo h2{
+    color:#1abc9c;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 15px;
+    border-radius:4px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background:#1abc9c;
+}
+
+/* Main */
+.main-container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+/* Hero */
+.help-hero{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(rgba(26,37,47,.85),rgba(26,37,47,.85)),url('help-bg.jpg') center/cover;
+    color:#fff;
+    border-radius:8px;
+    margin-bottom:40px;
+}
+
+.help-hero h1{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+
+.help-hero p{
+    font-size:1.1rem;
+    color:#ddd;
+}
+
+/* Cards */
+.help-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:space-between;
+}
+
+.help-card{
+    flex:1;
+    min-width:300px;
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.help-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.card-img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.help-card-body{
+    padding:20px;
+}
+
+.help-card-body h3{
+    color:#2c3e50;
+    border-bottom:2px solid #1abc9c;
+    padding-bottom:5px;
+    margin-bottom:12px;
+}
+
+.help-card-body p{
+    color:#555;
+    margin-bottom:12px;
+}
+
+.help-card-body ul{
+    margin-left:20px;
+}
+
+.help-card-body li{
+    margin-bottom:8px;
+}
+
+.help-card-body strong{
+    color:#16a085;
+}
+
+/* Footer */
+footer{
+    background:#1a252f;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+    <!-- Header iyo Menu-ga -->
+    <header>
+        <div class="logo">
+            <h2>Hilaac Trans</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="help.html" class="active">Help</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Qeybta Weyn ee Caawinaada -->
+    <main class="main-container">
+        
+        <!-- Banner-ka Sare ee Help (Sawir + Qoraal) -->
+        <section class="help-hero">
+            <h1>Sidee Kuugu Caawin Karnaa?</h1>
+            <p>Halkan ka baro habka ugu fudud ee aad u isticmaali karto adeegyada shaqo ee website-kayaga gaadiidka.</p>
+        </section>
+
+        <!-- Qeybta Hagaha (Cards oo Flexbox ah) -->
+        <section class="help-grid">
+            
+            <!-- Kaarka 1aad: Hagaha Foomka -->
+            <div class="help-card">
+                <div class="help-card-image">
+                    <img src="helping.jpg" alt="Hagaha buuxinta foomka" class="card-img">
+                </div>
+                <div class="help-card-body">
+                    <h3>Hagaha Foomka (Booking Form)</h3>
+                    <p>Markaad tagto bogga <strong>Booking</strong>, buuxi foomka adoo raacaya shuruudahan:</p>
+                    <ul>
+                        <li>Qor magacaaga oo saddexan (wuxuu leeyahay <em>required</em>).</li>
+                        <li>Dooro kulliyadaada (Major) iyo lab/dheddig.</li>
+                        <li>Dooro hiwaayadahaaga, kadibna riix badanka <strong>"Xaqiiji Booska"</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kaarka 2aad: Hagaha Shaxda & Sawirada -->
+            <div class="help-card">
+                <div class="help-card-image">
+                    <img src="helping2.jpg" alt="Hagaha shaxda xogta iyo qiimaha" class="card-img">
+                </div>
+                <div class="help-card-body">
+                    <h3>Gallery-ga iyo Shaxda Xogta</h3>
+                    <p>Bogga <strong>Gallery</strong> wuxuu kuu sahlayaa inaad aragto sawirada gaadiidka. Sidoo kale:</p>
+                    <ul>
+                        <li>Waxaad ku dhex arki kartaa shaxda qiimaha safarada (Data Table).</li>
+                        <li>Shaxdu waxay u kala go'an tahay safarada gudaha iyo gobolada dalka.</li>
+                        <li>Waxaad riixi kartaa xiriiriyayaasha (Hyperlinks) si aad xog dheeraad ah u hesho.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kaarka 3aad: Bogga Shakhsiga ah -->
+            <div class="help-card">
+                <div class="help-card-image">
+                    <img src="helping3.jpg" alt="Hagaha bogga caawinaada iyo ku saabsan ardayga" class="card-img">
+                </div>
+                <div class="help-card-body">
+                    <h3>Bogga Ku Saabsan (About)</h3>
+                    <p>Bogga <strong>About</strong> wuxuu muujinayaa macluumaadka shakhsiga ah ee ardayga mashruuca sameeyey:</p>
+                    <ul>
+                        <li>Magacaaga, ID-gaaga, iyo Kulliyadaada.</li>
+                        <li>Kooban kooban oo ku saabsan doorka aad ka qaadatay dhismaha website-ka.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hilaac Transportation Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

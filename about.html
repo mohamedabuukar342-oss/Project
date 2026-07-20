@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilaac Trans - Ku Saabsan (About Me)</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#1a252f;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo h2{
+    color:#1abc9c;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 15px;
+    border-radius:4px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background:#1abc9c;
+}
+
+/* Main */
+.main-container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+/* About Hero */
+.about-hero{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(rgba(26,37,47,.85),rgba(26,37,47,.85)),url('about-bg.jpg') center/cover;
+    color:#fff;
+    border-radius:8px;
+    margin-bottom:40px;
+}
+
+.about-hero h1{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+
+.about-hero p{
+    font-size:1.1rem;
+    color:#ddd;
+}
+
+/* Profile Card */
+.about-flex-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile-card{
+    background:#fff;
+    width:100%;
+    max-width:650px;
+    padding:35px 25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.1);
+}
+
+.profile-avatar{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #1abc9c;
+    margin-bottom:20px;
+}
+
+.profile-info p{
+    margin-bottom:10px;
+    color:#555;
+    font-size:17px;
+}
+
+.profile-info strong{
+    color:#2c3e50;
+}
+
+.student-id{
+    color:#e74c3c;
+    font-weight:bold;
+}
+
+.role-summary-box{
+    margin-top:25px;
+    background:#f8f9fa;
+    padding:20px;
+    border-top:4px solid #1abc9c;
+    border-radius:8px;
+    text-align:left;
+}
+
+.role-summary-box h3{
+    text-align:center;
+    color:#16a085;
+    margin-bottom:10px;
+}
+
+.role-summary-box p{
+    color:#666;
+    line-height:1.7;
+    text-align:justify;
+}
+
+/* Footer */
+footer{
+    background:#1a252f;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+    <!-- Header iyo Menu-ga -->
+    <header>
+        <div class="logo">
+            <h2>Hilaac Trans</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Qeybta Weyn ee About -->
+    <main class="main-container">
+        
+        <!-- Banner-ka Sare ee About (Sawir + Qoraal) -->
+        <section class="about-hero">
+            <h1>Ku Saabsan Naqshadeeyaha</h1>
+            <p>Baro ardayga ka dambeeyey dhismaha iyo isku duba-ridka website-ka adeegga gaadiidka.</p>
+        </section>
+
+        <!-- Profile Card-ka (Flexbox Layout) -->
+        <section class="about-flex-container">
+            
+            <div class="profile-card">
+                <!-- Sawirkaaga ama Avatar -->
+                <div class="profile-img-container">
+                    <img src="amiin.jpg" alt="Sawirka Ardayga Mashruuca Sameeyey" class="profile-avatar">
+                </div>
+                
+                <!-- Macluumaadkaaga rasmiga ah -->
+                <div class="profile-info">
+                 <p><strong> Magaca ardayga</strong> Mohamed abuukar mohamed</p>
+                    <p class="student-id"><strong>ID-ga Ardayga:</strong> C1250284</p>
+                    <p class="university"><strong>Jaamacadda:</strong> Jamhuriya University of Science & Technology</p>
+                    <p class="faculty"><strong>Kulliyadda:</strong> Faculty of Computer & IT</p>
+                    
+                    <div class="role-summary-box">
+                        <h3>Doorka Mashruuca (Role Summary)</h3>
+                        <p>Aniga ayaa ah ardayga kaligii u xilsaarnaa dhab ka dhigista mashruucan (Individual Project). Waxaan naqshadeeyey qaab-dhismeedka HTML5, waxaan u yeelay bilicda iyo habaynta Flexbox anigoo adeegsanaya CSS3, waxaanan si guul leh ugu soo bandhigay mawduuca Gaadiidka (Transportation).</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hilaac Transportation Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

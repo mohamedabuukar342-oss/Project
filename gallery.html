@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilaac Trans - Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+    color:#333;
+    line-height:1.6;
+}
+
+nav{
+    background-color:#1a252f;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 15px;
+    border-radius:4px;
+    transition:0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background:#1BE7C1;
+    color:#fff;
+}
+
+.main-container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2c3e50;
+}
+
+.services-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.service-box{
+    width:320px;
+    background:#fff;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 4px 8px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.service-img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+.data-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:#fff;
+    box-shadow:0 4px 6px rgba(0,0,0,.05);
+}
+
+.data-table caption{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.data-table th,
+.data-table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+.data-table th{
+    background:#1abc9c;
+    color:#fff;
+}
+
+.data-table tbody tr:nth-child(even){
+    background:#FFF3F3;
+}
+
+.data-table tfoot{
+    background:#2c3e50;
+    color:#fff;
+}
+
+p{
+    margin-top:15px;
+    color:#ff0303;
+    background:#f0f2ea;
+    padding:20px;
+    border-radius:5px;
+}
+
+p a{
+    color:#0066cc;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+p a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:#1a252f;
+    color:#fff;
+    margin-top:30px;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <nav>
+        <div class="logo"><h2>Hilaac Trans</h2></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="gallery-section">
+            <h2 class="section-title">Sawirada Gaadiidkayaga</h2>
+            <!-- 3 Sawir oo Optimized ah -->
+            <div class="services-container">
+                <div class="service-box">
+                    <h1> bus ka weyn ee safarka gobolada</h1>
+                    <img src="bus.jpg" alt="Baska weyn ee safarka gobolada" class="service-img">
+                </div>
+                <br>
+                <div class="service-box">
+                    <h2>VIP Taxi Service</h2>
+                    <img src="car.jpg" alt="Gaari yar oo VIP Taxi ah" class="service-img">
+                </div>
+                <br>
+                <div class="service-box">
+                    <h3><h3>Gaadiidka Xamuulka Cusub</h3></h3>
+                    <img src="xamuul.jpg" alt="Gaari weyn oo xamuul ah" class="service-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Shaxda Xogta (Data Table) -->
+        <section class="table-section" style="margin-top: 40px;">
+            <table class="data-table">
+                <caption>Qiimaha Safarada Gudaha iyo Gobolada </caption>
+                <thead>
+                    <tr>
+                        <th>Nooca Gaadiidka</th>
+                        <th>Goobta (Halka uu tagayo)</th>
+                        <th>Qiimaha ($ USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Baska Dadweynaha</td>
+                        <td>Gudaha Magaalada</td>
+                        <td>$0.50</td>
+                    </tr>
+                    <tr>
+                        <td>Taxi Khaas ah</td>
+                        <td>Gudaha Magaalada</td>
+                        <td>$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Baska Gobolada</td>
+                        <td>Mogadishu ilaa Garowe</td>
+                        <td>$25.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Ogeysiis: Qiimuhu wuu isbedeli karaa</td>
+                        <td>Xogta 2026</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p style="margin-top: 15px;">Wixii faahfaahin dheeri ah, booqo bogga rasmiga ah ee <a href="https://www.wikipedia.org" target="_blank">Wasaaradda Gaadiidka</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Hilaac Transportation Services. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

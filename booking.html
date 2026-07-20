@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilaac Trans - Book Your Ride</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#1a252f;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo h2{
+    color:#1abc9c;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 15px;
+    border-radius:4px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background:#1abc9c;
+}
+
+/* Main */
+.main-container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 20px;
+}
+
+/* Hero */
+.booking-hero{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(rgba(26,37,47,.8),rgba(26,37,47,.8)),url('booking-bg.jpg') center/cover;
+    color:#fff;
+    border-radius:8px;
+    margin-bottom:40px;
+}
+
+.booking-hero h1{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+
+/* Flex Container */
+.booking-flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+/* Image Side */
+.booking-image-side{
+    flex:1;
+    min-width:300px;
+}
+
+.side-img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.side-text-box{
+    margin-top:20px;
+    background:#e8f8f5;
+    padding:20px;
+    border-left:5px solid #1abc9c;
+    border-radius:6px;
+}
+
+.side-text-box h3{
+    color:#16a085;
+    margin-bottom:10px;
+}
+
+.side-text-box p{
+    margin-bottom:8px;
+}
+
+/* Form */
+.booking-form-side{
+    flex:1.2;
+    min-width:320px;
+}
+
+.booking-form fieldset{
+    border:2px solid #1abc9c;
+    border-radius:8px;
+    padding:25px;
+}
+
+.booking-form legend{
+    color:#1abc9c;
+    font-size:22px;
+    font-weight:bold;
+    padding:0 10px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#1abc9c;
+    outline:none;
+    box-shadow:0 0 5px rgba(26,188,156,.4);
+}
+
+.radio-group,
+.checkbox-group{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.radio-group label,
+.checkbox-group label{
+    display:inline;
+    font-weight:normal;
+}
+
+/* Button */
+.btn-submit{
+    width:100%;
+    padding:14px;
+    background:#1abc9c;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-submit:hover{
+    background:#16a085;
+}
+
+.btn-submit:active{
+    transform:scale(.98);
+}
+
+/* Footer */
+footer{
+    background:#1a252f;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+    <!-- Header iyo Menu-ga -->
+    <header>
+        <div class="logo">
+            <h2>Hilaac Trans</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Qeybta Weyn ee Booking -->
+    <main class="main-container">
+        
+        <!-- Banner-ka Sare ee Bogga (Sawir + Qoraal) -->
+        <section class="booking-hero">
+            <h1>Boos Ka Qabsasho Safarkaaga</h1>
+            <p>Xaqiiji booskaaga maanta si aad u hesho adeeg gaadiid oo ammaan ah, raaxo leh, waliba lagugu kalsoonaan karo.</p>
+        </section>
+
+        <!-- Qeybta Foomka iyo Sawirka Isku Dhinac ah (Flexbox) -->
+        <section class="booking-flex-container">
+            
+            <!-- Dhinaca Bidix: Sawir Qurxoon oo Gaadiid ah -->
+            <div class="booking-image-side">
+                <img src="booking.jpg" alt="Safar raaxo leh iyo adeeg gaadiid" class="side-img">
+                <div class="side-text-box">
+                    <h3>Maxaad Nooga Dooranaysaa?</h3>
+                    <p>✓ Shuraako run ah oo safarkaaga ah.</p>
+                    <p>✓ Darawalo khibrad leh oo la aamini karo.</p>
+                    <p>✓ Qiimo ku habboon jeebka ardayga.</p>
+                </div>
+            </div>
+
+            <!-- Dhinaca Midig: Foomka Boos Qabsashada (Form) -->
+            <div class="booking-form-side">
+                <form action="#" method="POST" class="booking-form">
+                    <fieldset>
+                        <legend>Xogta Codsiga Safarka</legend>
+                        
+                        <!-- Input Name -->
+                        <div class="form-group">
+                            <label for="fullname">Magacaaga oo Dhamaystiran:</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Tusaale: Maxamed Axmed" required>
+                        </div>
+
+                        <!-- Select Major -->
+                        <div class="form-group">
+                            <label for="major">Kulliyadaada (Major):</label>
+                            <select id="major" name="major" required>
+                                <option value="">-- Dooro Kulliyadaada --</option>
+                                <option value="CS">Computer Science</option>
+                                <option value="IT">Information Technology</option>
+                                <option value="ENG">Engineering</option>
+                                <option value="BI">Business Administration</option>
+                            </select>
+                        </div>
+
+                        <!-- Radio Buttons for Gender -->
+                        <div class="form-group">
+                            <label>Lab ama Dheddig (Gender):</label>
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Lab</label>
+                                
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Dheddig</label>
+                            </div>
+                        </div>
+
+                        <!-- Checkboxes for Hobbies -->
+                        <div class="form-group">
+                            <label>Hiwaayadahaaga (Hobbies):</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                                <label for="reading">Akhris</label>
+                                
+                                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                                <label for="sports">Ciyaaro</label>
+                                
+                                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                                <label for="coding">Koodh qoris</label>
+                            </div>
+                        </div>
+
+                        <!-- Textarea for Comments -->
+                        <div class="form-group">
+                            <label for="comments">Faallo ama Codsi Gaar ah:</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Halkan ku qor haddii aad qabto codsi gaar ah ama faallo..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-submit">Xaqiiji Booska Safarka</button>
+
+                    </fieldset>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hilaac Transportation Services. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
